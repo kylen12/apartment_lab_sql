@@ -71,7 +71,7 @@ DELETE FROM owners WHERE name='Jane';
 
 15. Show all of the properties in alphabetical order that are not named 
 Archstone and do not have an id of 3 or 5. 
-SELECT * FROM properties WHERE name != 'Archstone' and property_id != 3 and property_id != 5;
+SELECT * FROM properties WHERE name != 'Archstone' and property_id != 3 and property_id != 5 ORDER BY name;
 
 16. Count the total number of rows in the properties table.
 SELECT COUNT(*) FROM properties;
